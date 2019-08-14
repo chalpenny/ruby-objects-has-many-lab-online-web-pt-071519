@@ -9,11 +9,12 @@ class Post
     @@all << self
   end
 
-  def self.all
+  def Post.all
     @@all
   end
 
-
-
+  def author_name
+    author.name if author
+  end
 
 end
